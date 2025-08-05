@@ -38,7 +38,7 @@ jobs:
           mkdir build/
           cp index.html build/
           cp wheel.css build/
-          cp wheel.svg build/
+          cp *.svg build/
           cp results.json build/
 
       - name: Deploy the built files

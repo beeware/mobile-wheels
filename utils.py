@@ -17,6 +17,8 @@ DEPRECATED_PACKAGES = {
     "sklearn",
 }
 
+PLATFORMS = ["android", "ios"]
+
 # Keep responses for one hour
 SESSION = requests_cache.CachedSession("requests-cache", expire_after=60 * 60)
 
@@ -35,9 +37,7 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
         if package["name"] in DEPRECATED_PACKAGES:
             continue
 
-        has_other_binary_wheel = False
-        has_free_threaded_wheel = False
-        has_pure_python_wheel = False
+        available_platforms = set()
         url = get_json_url(package["name"])
         response = SESSION.get(url)
         if response.status_code != 200:
@@ -51,30 +51,19 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
                 # The wheel filename is:
                 # {distribution}-{version}(-{build tag})?-{python tag}-{abi tag}-{platform tag}.whl
                 # https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-name-convention
-                abi_tag = download["filename"].removesuffix(".whl").split("-")[-2]
+                platform_tag = download["filename"].removesuffix(".whl").split("-")[-1]
+                available_platforms.add(platform_tag.split("_")[0])
 
-                if abi_tag.endswith("t") and abi_tag.startswith("cp31"):
-                    has_free_threaded_wheel = True
-                elif abi_tag != "none":
-                    has_other_binary_wheel = True
-                else:
-                    has_pure_python_wheel = True
-
-        if has_free_threaded_wheel:
-            package["css_class"] = "success"
-            package["icon"] = "🧵"
-        elif has_other_binary_wheel:
-            if not has_pure_python_wheel:
-                package["css_class"] = "warning"
-                package["icon"] = "\u2717"  # Ballot X
-            else:
-                package["css_class"] = "pure-py"
-                package["icon"] = "🐍"
-        else:
-            # Don't show packages with only sdists or pure Python wheels
+        if available_platforms == {"any"}:
+            # Don't show packages with only pure Python wheels.
             continue
-
-        package["free_threaded_wheel"] = has_free_threaded_wheel
+        else:
+            for platform in PLATFORMS:
+                package[platform] = (
+                    "success" if platform in available_platforms
+                    else "pure-py" if "any" in available_platforms
+                    else "warning"
+                )
 
         keep.append(package)
         total += 1
@@ -90,10 +79,11 @@ def get_top_packages():
     with open("top-pypi-packages.json") as data_file:
         packages = json.load(data_file)["rows"]
 
-    # Rename keys
+    # We only need the names.
     for package in packages:
-        package["downloads"] = package.pop("download_count")
-        package["name"] = package.pop("project")
+        name = package.pop("project")
+        package.clear()
+        package["name"] = name
 
     return packages
 

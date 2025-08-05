@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="wheel.svg">
     <style>
         body{margin-top:15px;}
+        object {margin: 0.5rem;}
         a.btn, h1{text-align: center;}
         a.btn:last-child, canvas, body{margin-bottom:15px;}
         a.btn {border-bottom-width: 0; border-radius: 0; width: 100%}
@@ -27,6 +26,11 @@
           border-color: #90EE90;
           color: #000000;
         }
+
+        .btn-success::after { content: "✓"; }
+        .btn-pure-py::after { content: "🐍"; }
+        .btn-warning::after { content: "✗"; }
+
         @media (prefers-color-scheme: dark) {
           body {
             color: #ccc;
@@ -47,58 +51,66 @@
           }
         }
     </style>
-    <title>🧵 Free-Threaded Wheels</title>
+    <title>Mobile Wheels</title>
 </head>
 <body ng-controller="wheelCtrl">
     <div class="container">
         <div class="row">
-            <div class="col-sm">
-            <h1 id="wheels">🧵 Free-Threaded Wheels</h1>
-                <object data="wheel.svg" type="image/svg+xml" width="380" height="380" class="d-block mx-auto"></object>
-                <h2 id="what-wheels">What are wheels?</h2>
-                <p><a href="https://pypi.org/project/wheel">Wheels</a> are <a href="https://packaging.python.org/en/latest/specifications/binary-distribution-format/">the standard binary format</a> for distributing Python packages. See <a href="https://pythonwheels.com/">pythonwheels.com</a>.</p>
-                <h2 id="what">What are free-threaded wheels?</h2>
-                <p>Work is underway to make the Global Interpreter Lock (GIL) optional (see <a href="https://peps.python.org/pep-0703/">PEP 703</a>).
-                    Pure-Python wheels can already be used in free-threaded builds, but wheels with extensions need to be updated for free-threaded Python.
-                    This site shows which packages with extensions have been updated for free-threading.
-                    See <a href="https://labs.quansight.org/blog/free-threaded-python-rollout">Free-threaded CPython is ready to experiment with!</a>
-                </p>
+            <div class="col"></div>
+            <div class="col-sm-8">
+                <h1 id="wheels">Mobile Wheels</h1>
                 <h2 id="about-list">What is this list?</h2>
-                <p>This site shows the top 360 most-downloaded packages with extensions on <a href="https://pypi.org/">PyPI</a>:</p>
+                <p>This site shows the <a href="https://docs.python.org/3/using/android.html">Android</a> and <a href="https://docs.python.org/3/using/ios.html">iOS</a> support of the top 360 most-downloaded <i>binary</i> packages on <a href="https://pypi.org/">PyPI</a>, i.e., packages that need to be compiled for each architecture and operating system:</p>
                 <ul>
-                    <li><span class="text-success">Dark green</span> packages <span id="success-percent"></span> with a 🧵 offer free-threaded wheels</li>
-                    <li><span class="text-pure-py">Light green</span> packages <span id="pure-py-percent"></span> offer generic pure Python wheels, but no compiled wheels ready for free-threading (yet!)</li>
-                    <li><span class="text-warning">Orange</span> packages <span id="todo-percent"></span> offer wheels, but no wheels ready for free-threading (yet!)</li>
+                    <li><span class="text-success">Dark green</span> packages with a ✓ icon offer wheels compiled for Android or iOS.</li>
+                    <li><span class="text-pure-py">Light green</span> packages with a 🐍 icon offer pure Python wheels, but no wheels compiled for Android or iOS (yet!). The pure Python wheels will probably work on mobile, but may have lower performance.</li>
+                    <li><span class="text-warning">Orange</span> packages with a ✗ icon are not available for Android or iOS (yet!).</li>
+                    <li>Packages that <i>only</i> offer pure Python wheels are not listed. These packages will probably work on mobile already.</li>
                 </ul>
-                <p>Free-threaded wheels have an <a href="https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-name-convention">ABI tag</a> ending in <code>t</code>, for example, <code>cp313t</code></code></pre>.</p>
-                <p>Packages that are known to be deprecated are not included (for example, distribute). If your package is incorrectly listed, please <a href="https://github.com/hugovk/free-threaded-wheels/issues/">create a ticket</a>.</p>
+                <p>Packages that are known to be deprecated are not included (for example, pycrypto). If your package is incorrectly listed, or you see any other problem with this page, please create an <a href="https://github.com/beeware/mobile-wheels/issues/">issue</a> or a <a href="https://github.com/beeware/mobile-wheels/pulls/">pull request</a>.</p>
+
                 <h2 id="creating-wheels">My package is orange. What can I do?</h2>
-                <p>See <a href="https://hugovk.dev/blog/2023/help-us-test-free-threaded-python-without-the-gil/">how to test</a>
-                    and the advice at <a href="https://py-free-threading.github.io/">py-free-threading</a> for adding support for free-threading and creating wheels.</p>
-                <h2 id="bugs">Something's wrong with this page!</h2>
-                <p>Fantastic, a problem found is a problem fixed. Please <a href="https://github.com/hugovk/free-threaded-wheels/issues/">create a ticket</a>!</p>
-                <p>You can also <a href="https://github.com/hugovk/free-threaded-wheels/pulls/">submit a pull-request</a>.</p>
-                <p><em>Note: </em>Requests for behavioural changes in the packaging tools themselves should be directed to <a href="https://discuss.python.org/c/packaging/14">discuss.python.org</a> and the <a href="https://github.com/pypa/packaging-problems">Python Packaging Authority</a>.</p>
+                <p>The recommended way to build mobile-compatible wheels is to use <a href="https://cibuildwheel.pypa.io/en/stable/">cibuildwheel</a>. Despite the name, this tool is not limited to CI environments; it can be run locally on macOS and Linux machines. For more details, see the Android and iOS sections of the <a href="https://cibuildwheel.pypa.io/en/stable/platforms/">cibuildwheel documentation</a>.</p>
+
                 <h2 id="thanks">Thanks</h2>
-                <p>This is a derivative work of <a href="https://pythonwheels.com/">Python Wheels</a>, a site that tracks which Python distributions ship the wheel distribution.
+                <p>This is a derivative work of <a href="https://hugovk.github.io/free-threaded-wheels/">Free-Threaded Wheels</a> and <a href="https://pythonwheels.com/">Python Wheels</a>.
                     The top 360 list comes from <a href="https://hugovk.github.io/top-pypi-packages/">Top PyPI Packages</a>.</p>
-                <p>Thanks also to the many <a href="https://github.com/hugovk/free-threaded-wheels/graphs/contributors">contributors</a>.</p>
             </div>
+            <div class="col"></div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
             <div class="col-sm">
+                <h1>Android</h1>
+                <object data="android.svg" type="image/svg+xml" width="380" height="380" class="d-block mx-auto"></object>
                 <div class="list">
-                    <span ng-hide="packages">pythonwheels.com requires javascript to be enabled to display the list of packages.</span>
-                    <a ng-repeat="package in packages" ng-href="https://pypi.org/project/{{ package.name }}" class="btn btn-{{ package.css_class }}" ng-attr-title="{{package.title}}">
+                    <span ng-hide="packages">This page requires Javascript to be enabled to display the list of packages.</span>
+                    <a ng-repeat="package in packages" ng-href="https://pypi.org/project/{{ package.name }}" class="btn btn-{{ package.android }}">
                         <span ng-bind="package.name"></span>
-                        <span ng-bind="package.icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <h1>iOS</h1>
+                <object data="ios.svg" type="image/svg+xml" width="380" height="380" class="d-block mx-auto"></object>
+                <div class="list">
+                    <span ng-hide="packages">This page requires Javascript to be enabled to display the list of packages.</span>
+                    <a ng-repeat="package in packages" ng-href="https://pypi.org/project/{{ package.name }}" class="btn btn-{{ package.ios }}">
+                        <span ng-bind="package.name"></span>
                     </a>
                 </div>
             </div>
         </div>
+
         <footer>
             <p>Last updated <span ng-bind="last_update"></span>. (Updated daily.)</p>
         </footer>
+
     </div>
-    <a href="https://github.com/hugovk/free-threaded-wheels" class="github-corner" aria-label="View source on GitHub"><svg width="80" class="github-icon" height="80" viewBox="0 0 250 250" fill="#fff" color="#151513" style="position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <a href="https://github.com/beeware/mobile-wheels" class="github-corner" aria-label="View source on GitHub"><svg width="80" class="github-icon" height="80" viewBox="0 0 250 250" fill="#fff" color="#151513" style="position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
 
     <script>
@@ -107,18 +119,6 @@
             $http.get('results.json').then(function(res){
                 $scope.last_update = res.data.last_update;
                 $scope.packages = res.data.data;
-
-            // Calculate percentages
-            const totalPackages = $scope.packages.length;
-            const getPackageCount = (cssClass) => $scope.packages.filter(pkg => pkg.css_class === cssClass).length;
-
-            const successPercentage = (getPackageCount('success') / totalPackages) * 100;
-            const todoPercentage = (getPackageCount('warning') / totalPackages) * 100;
-            const purePyPercentage = (getPackageCount('pure-py') / totalPackages) * 100;
-
-            document.getElementById('success-percent').innerText = `(${successPercentage.toFixed(0)}%)`;
-            document.getElementById('todo-percent').innerText = `(${todoPercentage.toFixed(0)}%)`;
-            document.getElementById('pure-py-percent').innerText = `(${purePyPercentage.toFixed(0)}%)`;
             });
         });
     </script>

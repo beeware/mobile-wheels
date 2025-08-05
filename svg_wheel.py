@@ -45,16 +45,14 @@ def annular_sector_path(start, stop):
     return PATH_TEMPLATE.format(**points)
 
 
-def add_annular_sectors(wheel, packages, total):
+def add_annular_sectors(wheel, packages, total, platform):
     for index, result in enumerate(packages):
-        sector = et.SubElement(
+        et.SubElement(
             wheel,
             "path",
             d=annular_sector_path(*angles(index, total)),
-            attrib={"class": result["css_class"]},
+            attrib={"class": result[platform]},
         )
-        title = et.SubElement(sector, "title")
-        title.text = f"{result['name']} {result['icon']}"
 
 
 def angles(index, total):
@@ -71,7 +69,7 @@ def angles(index, total):
     return start, stop
 
 
-def add_fraction(wheel, packages, total):
+def add_fraction(wheel, packages, total, platform):
     text_attributes = {
         "class": "wheel-text",
         "text-anchor": "middle",
@@ -80,8 +78,7 @@ def add_fraction(wheel, packages, total):
         "font-family": '"Helvetica Neue",Helvetica,Arial,sans-serif',
     }
 
-    # Packages with some sort of wheel
-    wheel_packages = sum(package["free_threaded_wheel"] for package in packages)
+    wheel_packages = sum(package[platform] == "success" for package in packages)
 
     packages_with_wheels = et.SubElement(
         wheel,
@@ -121,17 +118,17 @@ def add_fraction(wheel, packages, total):
     title.text = percentage
 
 
-def generate_svg_wheel(packages, total):
+def generate_svg_wheel(packages, total, platform):
     wheel = et.Element(
         "svg",
         viewBox=f"0 0 {2 * CENTER} {2 * CENTER}",
         version="1.1",
         xmlns="http://www.w3.org/2000/svg",
     )
-    add_annular_sectors(wheel, packages, total)
+    add_annular_sectors(wheel, packages, total, platform)
 
-    add_fraction(wheel, packages, total)
+    add_fraction(wheel, packages, total, platform)
 
-    with open("wheel.svg", "wb") as svg:
+    with open(f"{platform}.svg", "wb") as svg:
         svg.write(HEADERS)
         svg.write(et.tostring(wheel))
