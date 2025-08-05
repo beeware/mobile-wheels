@@ -62,7 +62,9 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
                 package[platform] = (
                     "success"
                     if platform in available_platforms
-                    else "pure-py" if "any" in available_platforms else "warning"
+                    else "pure-py"
+                    if "any" in available_platforms
+                    else "warning"
                 )
 
         keep.append(package)
