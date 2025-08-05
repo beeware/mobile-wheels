@@ -2,7 +2,7 @@
 
 ## What is this list?
 
-This site shows the [Android](https://docs.python.org/3/using/android.html) and [iOS](https://docs.python.org/3/using/ios.html) support of the top 360 most-downloaded binary packages on [PyPI](https://pypi.org/), i.e., packages that need to be compiled for each architecture and operating system:
+[This site](http://beeware.org/mobile-wheels/) shows the [Android](https://docs.python.org/3/using/android.html) and [iOS](https://docs.python.org/3/using/ios.html) support of the top 360 most-downloaded binary packages on [PyPI](https://pypi.org/), i.e., packages that need to be compiled for each architecture and operating system:
 
 * Dark green packages with a ✓ icon offer wheels compiled for Android or iOS.
 * Light green packages with a 🐍 icon offer pure Python wheels, but no wheels compiled for Android or iOS (yet!). The pure Python wheels will probably work on mobile, but may have lower performance.
