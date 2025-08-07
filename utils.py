@@ -70,7 +70,9 @@ NON_MOBILE_PACKAGES = {
     "pywinpty",
     "windows-curses",
     # GUI toolkits that don't support mobile
+    "pyqt5",
     "pyqt5-qt5",
+    "pyqt5-sip",
 }
 
 PLATFORMS = ["android", "ios"]
