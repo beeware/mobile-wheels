@@ -602,8 +602,8 @@
   },
   {
    "name": "wandb",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "nvidia-cusparselt-cu12",
@@ -1366,11 +1366,6 @@
    "ios": "warning"
   },
   {
-   "name": "appium-python-client",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "uuid",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "outlines-core",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "pykerberos",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 07 August 2025, 10:30:29 UTC"
+ "last_update": "Friday, 08 August 2025, 10:30:07 UTC"
 }
