@@ -61,10 +61,7 @@ NON_MOBILE_PACKAGES = {
     "mkl",
     "tensorflow-intel",
     # Subprocesses aren't supported on mobile platforms
-    "coverage-enable-subprocess",
     "multiprocess",
-    "pytest-subprocess",
-    "subprocess-tee",
     # Windows-specific bindings
     "pywin32",
     "pywinpty",
