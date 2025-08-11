@@ -321,11 +321,6 @@
    "ios": "warning"
   },
   {
-   "name": "multiprocess",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
    "name": "lz4",
    "android": "warning",
    "ios": "warning"
@@ -386,62 +381,12 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-cublas-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cusparse-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "safetensors",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "nvidia-nccl-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "nvidia-nvjitlink-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cudnn-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cufft-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cusolver-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cuda-cupti-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-curand-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cuda-runtime-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cuda-nvrtc-cu12",
    "android": "warning",
    "ios": "warning"
   },
@@ -511,11 +456,6 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-nvtx-cu12",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "thrift",
    "android": "warning",
    "ios": "warning"
@@ -576,11 +516,6 @@
    "ios": "warning"
   },
   {
-   "name": "pywin32",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "ijson",
    "android": "warning",
    "ios": "warning"
@@ -602,11 +537,6 @@
   },
   {
    "name": "wandb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cusparselt-cu12",
    "android": "warning",
    "ios": "warning"
   },
@@ -677,11 +607,6 @@
   },
   {
    "name": "jpype1",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cufile-cu12",
    "android": "warning",
    "ios": "warning"
   },
@@ -1296,11 +1221,6 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-cublas-cu11",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "zipfile38",
    "android": "warning",
    "ios": "warning"
@@ -1356,22 +1276,7 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-cudnn-cu11",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cuda-runtime-cu11",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "uuid",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-cuda-nvrtc-cu11",
    "android": "warning",
    "ios": "warning"
   },
@@ -1651,11 +1556,6 @@
    "ios": "warning"
   },
   {
-   "name": "pywinpty",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "astropy",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1699,107 @@
    "name": "pykerberos",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "fastrlock",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "alibabacloud-tea-util",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "alibabacloud-openapi-util",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tink",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lru-dict",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "alibabacloud-endpoint-util",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pygame",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "alibabacloud-gateway-spi",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "patch-ng",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "alibabacloud-tea-xml",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pymeta3",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "immutables",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tf-nightly",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "scs",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "deptry",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "memoization",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "milvus-lite",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "blosc2",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ckzg",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "iopath",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Monday, 11 August 2025, 10:30:37 UTC"
+ "last_update": "Monday, 11 August 2025, 16:47:34 UTC"
 }
