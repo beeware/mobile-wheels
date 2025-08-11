@@ -15,6 +15,57 @@ DEPRECATED_PACKAGES = {
     "pycrypto",
     "pypular",
     "sklearn",
+    "subprocess32",
+}
+NON_MOBILE_PACKAGES = {
+    # Nvidia/CUDA projects. These can't be ported to mobile, because
+    # CUDA isn't available for Android or iOS.
+    "cuda-bindings",
+    "cupy-cuda11x",
+    "cupy-cuda12x",
+    "jax-cuda12-pjrt",
+    "jax-cuda12-plugin",
+    "nvidia-cublas-cu11",
+    "nvidia-cublas-cu12",
+    "nvidia-cuda-cupti-cu11",
+    "nvidia-cuda-cupti-cu12",
+    "nvidia-cuda-nvcc-cu12",
+    "nvidia-cuda-nvrtc-cu11",
+    "nvidia-cuda-nvrtc-cu12",
+    "nvidia-cuda-runtime-cu11",
+    "nvidia-cuda-runtime-cu12",
+    "nvidia-cudnn-cu11",
+    "nvidia-cudnn-cu12",
+    "nvidia-cufft-cu11",
+    "nvidia-cufft-cu12",
+    "nvidia-cufile-cu12",
+    "nvidia-curand-cu11",
+    "nvidia-curand-cu12",
+    "nvidia-cusolver-cu11",
+    "nvidia-cusolver-cu12",
+    "nvidia-cusparse-cu11",
+    "nvidia-cusparse-cu12",
+    "nvidia-cusparselt-cu12",
+    "nvidia-modelopt-core",
+    "nvidia-modelopt",
+    "nvidia-nccl-cu11",
+    "nvidia-nccl-cu12",
+    "nvidia-nccl-cu12",
+    "nvidia-nvshmem-cu12",
+    "nvidia-nvtx-cu11",
+    "nvidia-nvtx-cu12",
+    "sgl-kernel",
+    # Intel processors aren't used on mobile platforms.
+    "intel-cmplr-lib-ur",
+    "intel-openmp",
+    "mkl",
+    "tensorflow-intel",
+    # Subprocesses aren't supported on mobile platforms
+    "multiprocess",
+    # Windows-specific bindings
+    "pywin32",
+    "pywinpty",
+    "windows-curses",
 }
 
 PLATFORMS = ["android", "ios"]
@@ -34,7 +85,7 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
     keep = []
     for index, package in enumerate(packages):
         print(f"{total + 1}/{to_chart} {index + 1}/{num_packages} {package['name']}")
-        if package["name"] in DEPRECATED_PACKAGES:
+        if package["name"] in DEPRECATED_PACKAGES | NON_MOBILE_PACKAGES:
             continue
 
         available_platforms = set()

@@ -67,7 +67,7 @@
                     <li><span class="text-warning">Orange</span> packages with a ✗ icon are not available for Android or iOS (yet!).</li>
                     <li>Packages that <i>only</i> offer pure Python wheels are not listed. These packages will probably work on mobile already.</li>
                 </ul>
-                <p>Packages that are known to be deprecated are not included (for example, pycrypto). If your package is incorrectly listed, or you see any other problem with this page, please create an <a href="https://github.com/beeware/mobile-wheels/issues/">issue</a> or a <a href="https://github.com/beeware/mobile-wheels/pulls/">pull request</a>.</p>
+                <p>Packages that are known to be deprecated are not included (for example, pycrypto). Packages that can't be compiled for mobile platforms (e.g., packages depending on multiprocessing, Nvidia's CUDA framework, Intel's MKL API, or non-POSIX system APIs) are also excluded from this list. If your package is incorrectly listed, or you see any other problem with this page, please create an <a href="https://github.com/beeware/mobile-wheels/issues/">issue</a> or a <a href="https://github.com/beeware/mobile-wheels/pulls/">pull request</a>.</p>
 
                 <h2 id="creating-wheels">My package is orange. What can I do?</h2>
                 <p>The recommended way to build mobile-compatible wheels is to use <a href="https://cibuildwheel.pypa.io/en/stable/">cibuildwheel</a>. Despite the name, this tool is not limited to CI environments; it can be run locally on macOS and Linux machines. For more details, see the Android and iOS sections of the <a href="https://cibuildwheel.pypa.io/en/stable/platforms/">cibuildwheel documentation</a>.</p>
