@@ -776,11 +776,6 @@
    "ios": "warning"
   },
   {
-   "name": "fire",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pycares",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "sudachipy",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "kylinpy",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 16 August 2025, 10:26:39 UTC"
+ "last_update": "Sunday, 17 August 2025, 10:25:46 UTC"
 }
