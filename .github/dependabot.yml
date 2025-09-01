@@ -1,21 +1,17 @@
 version: 2
 updates:
-  # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
-    groups:
-      actions:
-        patterns:
-          - "*"
+      # Check for updates on Sunday, 8PM UTC
+      interval: "weekly"
+      day: "sunday"
+      time: "20:00"
 
-  # Maintain dependencies for Python
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "monthly"
-    groups:
-      pip:
-        patterns:
-          - "*"
+      # Check for updates on Sunday, 8PM UTC
+      interval: "weekly"
+      day: "sunday"
+      time: "20:00"
