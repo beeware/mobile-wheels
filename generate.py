@@ -13,13 +13,14 @@ TO_CHART = 360
 
 POT_FILE = "mobile-wheels.pot"
 
+
 def main(to_chart: int = TO_CHART) -> None:
     packages = get_top_packages()
     packages = annotate_wheels(packages, to_chart)
     save_to_file(packages, "results.json")
     for platform in PLATFORMS:
         generate_svg_wheel(packages, to_chart, platform)
-    
+
     LANGUAGES = []
     with open("languages.csv", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -33,7 +34,7 @@ def main(to_chart: int = TO_CHART) -> None:
     ]
     subprocess.run(pot_gen)
     for language in LANGUAGES:
-        if language == 'en':
+        if language == "en":
             continue
         if not os.path.exists(f"{language}.po"):
             po_gen = [
@@ -55,12 +56,11 @@ def main(to_chart: int = TO_CHART) -> None:
         html_gen = [
             "po2html",
             f"--input={language}.po",
-            f"--template=index.html",
+            "--template=index.html",
             f"--output=index_{language}.html",
             "--fuzzy",
         ]
         subprocess.run(html_gen)
-    
 
 
 if __name__ == "__main__":
