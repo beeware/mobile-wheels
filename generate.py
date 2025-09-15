@@ -26,6 +26,11 @@ def main(to_chart: int = TO_CHART) -> None:
         reader = csv.DictReader(f)
         for row in reader:
             LANGUAGES.append(row["code"])
+    if os.path.exists(POT_FILE):
+        with open(POT_FILE, "r") as pot:
+            old_pot_contents = pot.read()
+    else:
+        old_pot_contents = None
     pot_gen = [
         "html2po",
         "--pot",
@@ -33,6 +38,21 @@ def main(to_chart: int = TO_CHART) -> None:
         POT_FILE,
     ]
     subprocess.run(pot_gen)
+    if old_pot_contents is not None:
+        with open(POT_FILE, "r") as pot:
+            pot_contents = pot.read()
+        if (
+            sum(
+                a != b
+                for a, b in zip(
+                    pot_contents.splitlines(), old_pot_contents.splitlines()
+                )
+            )
+            + abs(len(pot_contents.splitlines()) - len(old_pot_contents.splitlines()))
+            == 1
+        ):
+            with open(POT_FILE, "w") as pot:
+                pot.write(old_pot_contents)
     for language in LANGUAGES:
         if language == "en":
             continue
