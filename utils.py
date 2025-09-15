@@ -148,7 +148,7 @@ def save_to_file(packages, file_name):
             json.dumps(
                 {
                     "data": packages,
-                    "last_update": now.strftime("%A, %d %B %Y, %X %Z"),
+                    "last_update": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 },
                 indent=1,
             )

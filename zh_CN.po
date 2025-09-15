@@ -1,0 +1,157 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-14 19:15-0500\n"
+"PO-Revision-Date: 2025-09-14 19:15-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: index.html%2Bhtml[lang]:2-1
+msgid "en"
+msgstr "zh_CN"
+
+#: index.html%2Bhtml.head.title:54-5
+msgctxt "index.html+html.head.title:54-5"
+msgid "Mobile Wheels"
+msgstr "移动 Wheels"
+
+#: index.html%2Bhtml.body.div.div.div.h1:65-17
+msgctxt "index.html+html.body.div.div.div.h1:65-17"
+msgid "Mobile Wheels"
+msgstr "移动 Wheels"
+
+#: index.html%2Bhtml.body.div.div.div.h2:66-17
+msgid "What is this list?"
+msgstr "这是什么列表？"
+
+#: index.html%2Bhtml.body.div.div.div.p:67-17
+msgid ""
+"This site shows the <a href=\"https://docs.python.org/3/using/"
+"android.html\">Android</a> and <a href=\"https://docs.python.org/3/using/"
+"ios.html\">iOS</a> support of the top 360 most-downloaded <i>binary</i> "
+"packages on <a href=\"https://pypi.org/\">PyPI</a>, i.e., packages that need "
+"to be compiled for each architecture and operating system:"
+msgstr ""
+"该网站显示了<a href=\"https://pypi.org/\">PyPI</a> 上下载量最高的 360 个<i>二"
+"进制</i>软件包（即每个架构和操作系统需要编译的软件包）对 <a href=\"https://"
+"docs.python.org/3/using/android.html\">Android</a> 和 <a href=\"https://"
+"docs.python.org/3/using/ios.html\">iOS</a> 的支持情况。"
+
+#: index.html%2Bhtml.body.div.div.div.ul.li:69-21
+msgid ""
+"<span class=\"text-success\">Dark green</span> packages with a ✓ icon offer "
+"wheels compiled for Android or iOS."
+msgstr ""
+"带有✓图标的<span class=\"text-success\">深绿色</span>软件包提供为 Android 或 "
+"iOS 系统编译的 wheels。"
+
+#: index.html%2Bhtml.body.div.div.div.ul.li:70-21
+msgid ""
+"<span class=\"text-pure-py\">Light green</span> packages with a 🐍 icon "
+"offer pure Python wheels, but no wheels compiled for Android or iOS (yet!). "
+"The pure Python wheels will probably work on mobile, but may have lower "
+"performance."
+msgstr ""
+"带有 🐍 图标的<span class=\"text-pure-py\">浅绿色</span>软件包提供纯 Python "
+"轮子，但（目前）还没有为 Android 或 iOS 编译的 wheels。纯 Python 轮子很有可能"
+"可以在移动设备上运行，但性能可能较低。"
+
+#: index.html%2Bhtml.body.div.div.div.ul.li:71-21
+msgid ""
+"<span class=\"text-warning\">Orange</span> packages with a ✗ icon are not "
+"available for Android or iOS (yet!)."
+msgstr ""
+"带有 ✗ 图标的<span class=\"text-warning\">橙色</span>软件包（尚）不支持 "
+"Android 或 iOS。"
+
+#: index.html%2Bhtml.body.div.div.div.ul.li:72-21
+msgid ""
+"Packages that <i>only</i> offer pure Python wheels are not listed. These "
+"packages will probably work on mobile already."
+msgstr ""
+"<i>仅</i>提供纯 Python Wheels 的软件包未列出。这些软件包很有可能已经可以在直"
+"接在移动设备上运行。"
+
+#: index.html%2Bhtml.body.div.div.div.p:74-17
+msgid ""
+"Packages that are known to be deprecated are not included (for example, "
+"pycrypto). Packages that can't be compiled for mobile platforms (e.g., "
+"packages depending on multiprocessing, Nvidia's CUDA framework, Intel's MKL "
+"API, or non-POSIX system APIs) are also excluded from this list. If your "
+"package is incorrectly listed, or you see any other problem with this page, "
+"please create an <a href=\"https://github.com/beeware/mobile-wheels/issues/"
+"\">issue</a> or a <a href=\"https://github.com/beeware/mobile-wheels/pulls/"
+"\">pull request</a>."
+msgstr ""
+"已弃用的软件包（例如 pycrypto）不被包含到此列表中。无法为移动平台编译的软件包"
+"（例如依赖于 multiprocessing、Nvidia 的 CUDA 框架、Intel 的 MKL API 或非 "
+"POSIX 系统 API 的软件包）也不被包含到此列表当中。如果您的软件包被错误的列出，"
+"或您在此页面上发现任何其他错误，请创建一个<a href=\"https://github.com/"
+"beeware/mobile-wheels/issues/\">问题</a>或<a href=\"https://github.com/"
+"beeware/mobile-wheels/pulls/\">拉取请求</a>。"
+
+#: index.html%2Bhtml.body.div.div.div.h2:76-17
+msgid "My package is orange. What can I do?"
+msgstr "我的软件包是橙色的。我该怎么做？"
+
+#: index.html%2Bhtml.body.div.div.div.p:77-17
+msgid ""
+"The recommended way to build mobile-compatible wheels is to use <a "
+"href=\"https://cibuildwheel.pypa.io/en/stable/\">cibuildwheel</a>. Despite "
+"the name, this tool is not limited to CI environments; it can be run locally "
+"on macOS and Linux machines. For more details, see the Android and iOS "
+"sections of the <a href=\"https://cibuildwheel.pypa.io/en/stable/platforms/"
+"\">cibuildwheel documentation</a>."
+msgstr ""
+"构建移动设备兼容的推荐方式是使用 <a href=\"https://cibuildwheel.pypa.io/en/"
+"stable/\">cibuildwheel</a>。尽管名为 cibuildwheel，它不局限于 CI 环境；它也可"
+"以在 macOS 与 Linux 机器上本地运行。要了解更多详情，参阅 <a href=\"https://"
+"cibuildwheel.pypa.io/en/stable/platforms/\">cibuildwheel 文档</a>中的 "
+"Android 与 iOS 部分。"
+
+#: index.html%2Bhtml.body.div.div.div.h2:79-17
+msgid "Thanks"
+msgstr "致谢"
+
+#: index.html%2Bhtml.body.div.div.div.p:80-17
+msgid ""
+"This is a derivative work of <a href=\"https://hugovk.github.io/free-"
+"threaded-wheels/\">Free-Threaded Wheels</a> and <a href=\"https://"
+"pythonwheels.com/\">Python Wheels</a>. The top 360 list comes from <a "
+"href=\"https://hugovk.github.io/top-pypi-packages/\">Top PyPI Packages</a>."
+msgstr ""
+"此网站是 <a href=\"https://hugovk.github.io/free-threaded-wheels/\">Free-"
+"Threaded Wheels</a> 与 <a href=\"https://pythonwheels.com/\">Python Wheels</"
+"a> 网站的派生作品。最常使用的 360 个软件包列表来自于 <a href=\"https://"
+"hugovk.github.io/top-pypi-packages/\">Top PyPI Packages</a>。"
+
+#: index.html%2Bhtml.body.div.div.div.h1:90-17
+msgid "Android"
+msgstr "Android"
+
+#: index.html%2Bhtml.body.div.div.div.div:92-17
+msgctxt "index.html+html.body.div.div.div.div:92-17"
+msgid ""
+"This page requires Javascript to be enabled to display the list of packages."
+msgstr "此页面需要您开启 JavaScript 以显示软件包列表。"
+
+#: index.html%2Bhtml.body.div.div.div.h1:101-17
+msgid "iOS"
+msgstr "iOS"
+
+#: index.html%2Bhtml.body.div.div.div.div:103-17
+msgctxt "index.html+html.body.div.div.div.div:103-17"
+msgid ""
+"This page requires Javascript to be enabled to display the list of packages."
+msgstr "此页面需要您开启 JavaScript 以显示软件包列表。"
+
+#: index.html%2Bhtml.body.div.footer.p:113-13
+msgid "Last updated <span ng-bind=\"last_update\"></span>. (Updated daily.)"
+msgstr "上次更新：<span ng-bind=\"last_update\"></span>。（每日更新）"

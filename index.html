@@ -55,6 +55,10 @@
 </head>
 <body ng-controller="wheelCtrl">
     <div class="container">
+        <select id="languageDropdown" onchange="location = this.value;">
+          <!-- Options will be populated dynamically -->
+        </select>
+
         <div class="row">
             <div class="col"></div>
             <div class="col-sm-8">
@@ -117,10 +121,45 @@
         var app = angular.module('app', [])
         .controller('wheelCtrl', function ($scope, $http){
             $http.get('results.json').then(function(res){
-                $scope.last_update = res.data.last_update;
+                const date = new Date(res.data.last_update);
+                const datestring = date.toLocaleString(navigator.language, {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric',
+                    timeZoneName: 'short',
+                });
+                $scope.last_update = datestring;
                 $scope.packages = res.data.data;
             });
         });
+    </script>
+
+    <script>
+        fetch('languages.csv')
+          .then(response => response.text())
+          .then(data => {
+            const dropdown = document.getElementById('languageDropdown');
+            const lines = data.split('\n');
+            const currentPage = window.location.pathname.split('/').pop();
+            let currentCode = currentPage === 'index.html' ? 'en' : (currentPage.match(/^index_(.+)\.html$/) || [])[1] || 'en';
+
+            for (let i = 1; i < lines.length; i++) {
+              const line = lines[i].trim();
+              if (!line) continue;
+              const [code, language] = line.split(',');
+              const filename = code === 'en' ? 'index.html' : `index_${code}.html`;
+              const option = document.createElement('option');
+              option.value = filename;
+              option.textContent = language;
+              if (code === currentCode) option.selected = true;
+              dropdown.appendChild(option);
+            }
+          })
+          .catch(error => console.error('Error loading CSV:', error));
     </script>
 </body>
 </html>

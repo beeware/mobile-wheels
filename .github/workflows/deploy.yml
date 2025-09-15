@@ -49,13 +49,15 @@ jobs:
         run: |
           mkdir build/
           cp index.html build/
+          cp languages.csv build/
           cp wheel.css build/
           cp *.svg build/
+          cp index_*.html build/
           cp results.json build/
 
       - name: Deploy the built files
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: build  # The folder the action should deploy.
           git-config-name: github-actions[bot]
           git-config-email: 41898282+github-actions[bot]@users.noreply.github.com

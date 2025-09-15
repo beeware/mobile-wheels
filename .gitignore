@@ -4,3 +4,5 @@ requests-cache.sqlite
 results.json
 top-pypi-packages.json
 *.svg
+index_*.html
+*.mo
