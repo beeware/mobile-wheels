@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 19:15-0500\n"
+"POT-Creation-Date: 2025-09-14 19:24-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.6\n"
+"X-Generator: Translate Toolkit 3.6.1\n"
 
 #: index.html%2Bhtml[lang]:2-1
 msgid "en"
@@ -97,11 +97,10 @@ msgstr ""
 
 #: index.html%2Bhtml.body.div.div.div.p:80-17
 msgid ""
-"This is a derivative work of <a href="
-"\"https://hugovk.github.io/free-threaded-wheels/\">Free-Threaded Wheels</a> "
-"and <a href=\"https://pythonwheels.com/\">Python Wheels</a>. The top 360 "
-"list comes from <a href=\"https://hugovk.github.io/top-pypi-packages/\">Top "
-"PyPI Packages</a>."
+"This is a derivative work of <a href=\"https://hugovk.github.io/"
+"free-threaded-wheels/\">Free-Threaded Wheels</a> and <a href=\"https"
+"://pythonwheels.com/\">Python Wheels</a>. The top 360 list comes from <a "
+"href=\"https://hugovk.github.io/top-pypi-packages/\">Top PyPI Packages</a>."
 msgstr ""
 
 #: index.html%2Bhtml.body.div.div.div.h1:90-17
