@@ -41,6 +41,10 @@ def main(to_chart: int = TO_CHART) -> None:
     if old_pot_contents is not None:
         with open(POT_FILE, "r") as pot:
             pot_contents = pot.read()
+        # The below checks for only one differing line.  The creation
+        # date of the POT is always changed, and that change shall
+        # be reverted if it's the only change, since that results
+        # in a no-op commit.
         if (
             sum(
                 a != b
