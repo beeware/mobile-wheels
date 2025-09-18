@@ -881,11 +881,6 @@
    "ios": "warning"
   },
   {
-   "name": "pyperclip",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "temporalio",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "alibabacloud-openapi-util",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "conan",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 17 September 2025, 10:25:04 UTC"
+ "last_update": "Thursday, 18 September 2025, 10:25:13 UTC"
 }
