@@ -1721,11 +1721,6 @@
    "ios": "warning"
   },
   {
-   "name": "svglib",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "statsig-python-core",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "conan",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "immutables",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 25 September 2025, 02:02:34 UTC"
+ "last_update": "Thursday, 25 September 2025, 10:27:32 UTC"
 }
