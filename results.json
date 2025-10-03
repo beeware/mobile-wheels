@@ -506,11 +506,6 @@
    "ios": "warning"
   },
   {
-   "name": "polars",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "libcst",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "conan",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "gym",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 02 October 2025, 10:25:21 UTC"
+ "last_update": "Friday, 03 October 2025, 10:25:07 UTC"
 }
