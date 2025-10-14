@@ -267,7 +267,7 @@
   },
   {
    "name": "dulwich",
-   "android": "success",
+   "android": "pure-py",
    "ios": "pure-py"
   },
   {
@@ -1666,11 +1666,6 @@
    "ios": "warning"
   },
   {
-   "name": "alibabacloud-credentials",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pyaes",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "gym",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "scandir",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Monday, 13 October 2025, 10:28:56 UTC"
+ "last_update": "Tuesday, 14 October 2025, 10:26:50 UTC"
 }
