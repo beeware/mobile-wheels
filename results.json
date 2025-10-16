@@ -1541,6 +1541,11 @@
    "ios": "warning"
   },
   {
+   "name": "autobahn",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "pygeohash",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "gym",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "scandir",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 15 October 2025, 10:27:54 UTC"
+ "last_update": "Thursday, 16 October 2025, 10:28:00 UTC"
 }
