@@ -1647,8 +1647,8 @@
   },
   {
    "name": "tritonclient",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "stringzilla",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 30 October 2025, 10:27:49 UTC"
+ "last_update": "Friday, 31 October 2025, 10:28:42 UTC"
 }
