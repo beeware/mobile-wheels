@@ -817,7 +817,7 @@
   },
   {
    "name": "optree",
-   "android": "warning",
+   "android": "success",
    "ios": "success"
   },
   {
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 13 November 2025, 10:30:42 UTC"
+ "last_update": "Friday, 14 November 2025, 10:28:37 UTC"
 }
