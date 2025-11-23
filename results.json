@@ -1141,11 +1141,6 @@
    "ios": "warning"
   },
   {
-   "name": "restructuredtext-lint",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "typed-ast",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "conan",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "promise",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 22 November 2025, 10:26:37 UTC"
+ "last_update": "Sunday, 23 November 2025, 10:25:12 UTC"
 }
