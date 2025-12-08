@@ -1126,11 +1126,6 @@
    "ios": "warning"
   },
   {
-   "name": "pyzstd",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "gssapi",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "kornia-rs",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "pymupdfb",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Sunday, 07 December 2025, 10:25:09 UTC"
+ "last_update": "Monday, 08 December 2025, 10:32:32 UTC"
 }
