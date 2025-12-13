@@ -722,7 +722,7 @@
   },
   {
    "name": "pypdfium2",
-   "android": "warning",
+   "android": "success",
    "ios": "warning"
   },
   {
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 12 December 2025, 10:31:40 UTC"
+ "last_update": "Saturday, 13 December 2025, 10:26:28 UTC"
 }
