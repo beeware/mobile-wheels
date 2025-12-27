@@ -1777,8 +1777,8 @@
   },
   {
    "name": "caio",
-   "android": "warning",
-   "ios": "warning"
+   "android": "pure-py",
+   "ios": "pure-py"
   },
   {
    "name": "scs",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 26 December 2025, 10:30:25 UTC"
+ "last_update": "Saturday, 27 December 2025, 10:27:34 UTC"
 }
