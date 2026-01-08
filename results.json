@@ -1016,11 +1016,6 @@
    "ios": "warning"
   },
   {
-   "name": "peewee",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "crcmod",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "pyqt6",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "osqp",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 07 January 2026, 10:32:15 UTC"
+ "last_update": "Thursday, 08 January 2026, 10:33:19 UTC"
 }
