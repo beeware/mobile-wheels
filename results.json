@@ -1226,11 +1226,6 @@
    "ios": "warning"
   },
   {
-   "name": "pypika",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "bitsandbytes",
    "android": "warning",
    "ios": "warning"
@@ -1701,11 +1696,6 @@
    "ios": "warning"
   },
   {
-   "name": "alibabacloud-openapi-util",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "simsimd",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1789,17 @@
    "name": "osqp",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "brotlicffi",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tink",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 14 January 2026, 10:34:11 UTC"
+ "last_update": "Thursday, 15 January 2026, 10:32:28 UTC"
 }
