@@ -401,6 +401,11 @@
    "ios": "warning"
   },
   {
+   "name": "pytokens",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
    "name": "argon2-cffi-bindings",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "brotlicffi",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "tink",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Sunday, 18 January 2026, 10:28:02 UTC"
+ "last_update": "Monday, 19 January 2026, 10:37:34 UTC"
 }
