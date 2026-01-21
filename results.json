@@ -382,8 +382,8 @@
   },
   {
    "name": "mysql-connector-python",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "pycryptodomex",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Tuesday, 20 January 2026, 10:37:07 UTC"
+ "last_update": "Wednesday, 21 January 2026, 10:37:12 UTC"
 }
