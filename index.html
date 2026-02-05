@@ -13,23 +13,25 @@
         a.btn:last-child{border-bottom-width: 1px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
         pre {text-align: left;}
         footer{text-align: center;}
+
         .btn-pure-py {
-          background-color: #90EE90;
-          border-color: #90EE90;
-          color: #000000;
-        }
-        .text-pure-py {
-          color: #90EE90;
-        }
-        .btn-pure-py:hover {
-          background-color: #90EE90;
-          border-color: #90EE90;
-          color: #000000;
+          --bs-btn-bg: #90EE90;
+          --bs-btn-border-color: #90EE90;
+          --bs-btn-color: #000000;
+          --bs-btn-hover-bg: #A7F1A7;
+          --bs-btn-hover-border-color: #A7F1A7;
+          --bs-btn-hover-color: #000000;
         }
 
-        .btn-success::after { content: "✓"; }
-        .btn-pure-py::after { content: "🐍"; }
-        .btn-warning::after { content: "✗"; }
+        .btn.btn-success::after { content: "✓"; }
+        .btn.btn-pure-py::after { content: "🐍"; }
+        .btn.btn-warning::after { content: "✗"; }
+
+        .preview {
+            background-color: var(--bs-btn-bg);
+            color: var(--bs-btn-color);
+            padding: 0.1em;
+        }
 
         @media (prefers-color-scheme: dark) {
           body {
@@ -62,9 +64,9 @@
                 <h2 id="about-list">What is this list?</h2>
                 <p>This site shows the <a href="https://docs.python.org/3/using/android.html">Android</a> and <a href="https://docs.python.org/3/using/ios.html">iOS</a> support of the top 360 most-downloaded <i>binary</i> packages on <a href="https://pypi.org/">PyPI</a>, i.e., packages that need to be compiled for each architecture and operating system:</p>
                 <ul>
-                    <li><span class="text-success">Dark green</span> packages with a ✓ icon offer wheels compiled for Android or iOS.</li>
-                    <li><span class="text-pure-py">Light green</span> packages with a 🐍 icon offer pure Python wheels, but no wheels compiled for Android or iOS (yet!). The pure Python wheels will probably work on mobile, but may have lower performance.</li>
-                    <li><span class="text-warning">Orange</span> packages with a ✗ icon are not available for Android or iOS (yet!).</li>
+                    <li><span class="preview btn-success">Dark green</span> packages with a ✓ icon offer wheels compiled for Android or iOS.</li>
+                    <li><span class="preview btn-pure-py">Light green</span> packages with a 🐍 icon offer pure Python wheels, but no wheels compiled for Android or iOS (yet!). The pure Python wheels will probably work on mobile, but may have lower performance.</li>
+                    <li><span class="preview btn-warning">Orange</span> packages with a ✗ icon are not available for Android or iOS (yet!).</li>
                     <li>Packages that <i>only</i> offer pure Python wheels are not listed. These packages will probably work on mobile already.</li>
                 </ul>
                 <p>Packages that are known to be deprecated are not included (for example, pycrypto). Packages that can't be compiled for mobile platforms (e.g., packages depending on multiprocessing, Nvidia's CUDA framework, Intel's MKL API, or non-POSIX system APIs) are also excluded from this list. If your package is incorrectly listed, or you see any other problem with this page, please create an <a href="https://github.com/beeware/mobile-wheels/issues/">issue</a> or a <a href="https://github.com/beeware/mobile-wheels/pulls/">pull request</a>.</p>
