@@ -1271,11 +1271,6 @@
    "ios": "warning"
   },
   {
-   "name": "sqlglotrs",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "cassandra-driver",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "osqp",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "djlint",
+   "android": "pure-py",
+   "ios": "pure-py"
   }
  ],
- "last_update": "Monday, 23 February 2026, 10:57:00 UTC"
+ "last_update": "Tuesday, 24 February 2026, 10:55:44 UTC"
 }
