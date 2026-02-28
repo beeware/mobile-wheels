@@ -316,11 +316,6 @@
    "ios": "warning"
   },
   {
-   "name": "jsonpath-ng",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pycryptodome",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "osqp",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "djlint",
+   "android": "pure-py",
+   "ios": "pure-py"
   }
  ],
- "last_update": "Friday, 27 February 2026, 10:49:39 UTC"
+ "last_update": "Saturday, 28 February 2026, 10:31:34 UTC"
 }
