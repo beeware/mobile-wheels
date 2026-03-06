@@ -1141,11 +1141,6 @@
    "ios": "warning"
   },
   {
-   "name": "wikipedia-api",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "unicodecsv",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "emr-notebooks-magics",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-typescript",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 05 March 2026, 10:50:38 UTC"
+ "last_update": "Friday, 06 March 2026, 10:44:25 UTC"
 }
