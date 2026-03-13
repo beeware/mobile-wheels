@@ -1682,8 +1682,8 @@
   },
   {
    "name": "lmdb",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "pyqt5",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 12 March 2026, 10:50:34 UTC"
+ "last_update": "Friday, 13 March 2026, 10:46:35 UTC"
 }
