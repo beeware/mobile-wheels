@@ -1136,11 +1136,6 @@
    "ios": "pure-py"
   },
   {
-   "name": "cairosvg",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "statsig-python-core",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "emr-notebooks-magics",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-typescript",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 14 March 2026, 10:36:35 UTC"
+ "last_update": "Sunday, 15 March 2026, 10:38:12 UTC"
 }
