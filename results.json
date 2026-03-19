@@ -1256,6 +1256,11 @@
    "ios": "warning"
   },
   {
+   "name": "pyhocon",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "multi-key-dict",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "emr-notebooks-magics",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-typescript",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 18 March 2026, 10:57:54 UTC"
+ "last_update": "Thursday, 19 March 2026, 10:51:23 UTC"
 }
