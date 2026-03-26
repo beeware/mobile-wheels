@@ -1626,6 +1626,11 @@
    "ios": "warning"
   },
   {
+   "name": "datefinder",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "rasterio",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "yappi",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "emr-notebooks-magics",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 25 March 2026, 10:57:03 UTC"
+ "last_update": "Thursday, 26 March 2026, 11:01:06 UTC"
 }
