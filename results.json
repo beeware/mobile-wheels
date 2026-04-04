@@ -732,7 +732,7 @@
   },
   {
    "name": "curl-cffi",
-   "android": "warning",
+   "android": "success",
    "ios": "warning"
   },
   {
@@ -1801,5 +1801,5 @@
    "ios": "pure-py"
   }
  ],
- "last_update": "Friday, 03 April 2026, 10:51:32 UTC"
+ "last_update": "Saturday, 04 April 2026, 10:41:40 UTC"
 }
