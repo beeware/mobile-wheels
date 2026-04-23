@@ -472,8 +472,8 @@
   },
   {
    "name": "mysql-connector-python",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "semgrep",
@@ -1801,5 +1801,5 @@
    "ios": "pure-py"
   }
  ],
- "last_update": "Wednesday, 22 April 2026, 11:14:17 UTC"
+ "last_update": "Thursday, 23 April 2026, 11:15:33 UTC"
 }
