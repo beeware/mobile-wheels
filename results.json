@@ -1226,11 +1226,6 @@
    "ios": "warning"
   },
   {
-   "name": "multitasking",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "fiona",
    "android": "warning",
    "ios": "warning"
@@ -1302,11 +1297,6 @@
   },
   {
    "name": "pybcj",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "starkbank-ecdsa",
    "android": "warning",
    "ios": "warning"
   },
@@ -1799,7 +1789,17 @@
    "name": "torchao",
    "android": "pure-py",
    "ios": "pure-py"
+  },
+  {
+   "name": "newrelic",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pycocotools",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 23 April 2026, 11:15:33 UTC"
+ "last_update": "Friday, 24 April 2026, 11:12:31 UTC"
 }
