@@ -602,8 +602,8 @@
   },
   {
    "name": "cbor2",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "pymupdf-layout",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Tuesday, 28 April 2026, 11:51:18 UTC"
+ "last_update": "Wednesday, 29 April 2026, 11:45:41 UTC"
 }
