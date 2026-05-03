@@ -602,8 +602,8 @@
   },
   {
    "name": "backports-zstd",
-   "android": "warning",
-   "ios": "warning"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "pypdfium2",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Sunday, 03 May 2026, 10:58:51 UTC"
+ "last_update": "Sunday, 03 May 2026, 23:11:42 UTC"
 }
