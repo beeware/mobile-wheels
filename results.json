@@ -1421,6 +1421,11 @@
    "ios": "warning"
   },
   {
+   "name": "pinecone",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "dependency-injector",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "lmdb",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "onnxruntime-gpu",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Sunday, 03 May 2026, 23:11:42 UTC"
+ "last_update": "Monday, 04 May 2026, 11:55:58 UTC"
 }
