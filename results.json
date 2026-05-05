@@ -161,6 +161,11 @@
    "ios": "warning"
   },
   {
+   "name": "sglang",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "psycopg2-binary",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "gitignore-parser",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "lmdb",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Monday, 04 May 2026, 11:55:58 UTC"
+ "last_update": "Tuesday, 05 May 2026, 11:20:47 UTC"
 }
