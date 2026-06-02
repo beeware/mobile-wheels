@@ -47,8 +47,8 @@
   },
   {
    "name": "aiohttp",
-   "android": "warning",
-   "ios": "warning"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "yarl",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Monday, 01 June 2026, 16:11:15 UTC"
+ "last_update": "Tuesday, 02 June 2026, 14:12:27 UTC"
 }
