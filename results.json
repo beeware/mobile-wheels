@@ -986,11 +986,6 @@
    "ios": "pure-py"
   },
   {
-   "name": "tritonclient",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
    "name": "pymupdf-layout",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "pycocotools",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "tantivy",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Tuesday, 02 June 2026, 14:12:27 UTC"
+ "last_update": "Wednesday, 03 June 2026, 14:47:55 UTC"
 }
