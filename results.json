@@ -112,8 +112,8 @@
   },
   {
    "name": "sqlalchemy",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "tomli",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Sunday, 14 June 2026, 12:03:12 UTC"
+ "last_update": "Monday, 15 June 2026, 15:50:45 UTC"
 }
