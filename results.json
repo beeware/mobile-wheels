@@ -23,7 +23,7 @@
   {
    "name": "cffi",
    "android": "warning",
-   "ios": "warning"
+   "ios": "success"
   },
   {
    "name": "pydantic-core",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Monday, 06 July 2026, 13:53:12 UTC"
+ "last_update": "Tuesday, 07 July 2026, 12:31:08 UTC"
 }
