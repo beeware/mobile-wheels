@@ -46,6 +46,11 @@
    "ios": "warning"
   },
   {
+   "name": "litellm",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "aiohttp",
    "android": "success",
    "ios": "success"
@@ -1794,12 +1799,7 @@
    "name": "pylance",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "torchcodec",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 11 July 2026, 11:12:36 UTC"
+ "last_update": "Sunday, 12 July 2026, 11:16:01 UTC"
 }
