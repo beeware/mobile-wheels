@@ -1296,6 +1296,11 @@
    "ios": "warning"
   },
   {
+   "name": "pipdeptree",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "openlineage-sql",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "nvidia-cutlass-dsl-libs-base",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "pylance",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Monday, 20 July 2026, 12:21:27 UTC"
+ "last_update": "Tuesday, 21 July 2026, 11:53:17 UTC"
 }
