@@ -1336,11 +1336,6 @@
    "ios": "warning"
   },
   {
-   "name": "pylatexenc",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "rtree",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "nvidia-cutlass-dsl-libs-base",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "pylance",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 25 July 2026, 11:16:48 UTC"
+ "last_update": "Sunday, 26 July 2026, 11:23:37 UTC"
 }
