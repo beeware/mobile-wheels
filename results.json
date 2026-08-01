@@ -11,6 +11,11 @@
    "ios": "warning"
   },
   {
+   "name": "cffi",
+   "android": "warning",
+   "ios": "success"
+  },
+  {
    "name": "pyyaml",
    "android": "warning",
    "ios": "warning"
@@ -19,11 +24,6 @@
    "name": "numpy",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "cffi",
-   "android": "warning",
-   "ios": "success"
   },
   {
    "name": "pydantic-core",
@@ -36,12 +36,12 @@
    "ios": "pure-py"
   },
   {
-   "name": "pandas",
+   "name": "markupsafe",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "markupsafe",
+   "name": "pandas",
    "android": "warning",
    "ios": "warning"
   },
@@ -61,11 +61,6 @@
    "ios": "pure-py"
   },
   {
-   "name": "propcache",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
    "name": "rpds-py",
    "android": "warning",
    "ios": "warning"
@@ -76,19 +71,24 @@
    "ios": "pure-py"
   },
   {
+   "name": "propcache",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
    "name": "frozenlist",
    "android": "pure-py",
    "ios": "pure-py"
   },
   {
-   "name": "sglang",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pillow",
    "android": "warning",
    "ios": "success"
+  },
+  {
+   "name": "websockets",
+   "android": "pure-py",
+   "ios": "pure-py"
   },
   {
    "name": "wrapt",
@@ -101,17 +101,17 @@
    "ios": "warning"
   },
   {
+   "name": "scipy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "grpcio",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "websockets",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "scipy",
+   "name": "regex",
    "android": "warning",
    "ios": "warning"
   },
@@ -126,7 +126,7 @@
    "ios": "pure-py"
   },
   {
-   "name": "regex",
+   "name": "lxml",
    "android": "warning",
    "ios": "warning"
   },
@@ -136,17 +136,12 @@
    "ios": "pure-py"
   },
   {
-   "name": "psutil",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "lxml",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "jiter",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "psutil",
    "android": "warning",
    "ios": "warning"
   },
@@ -161,7 +156,7 @@
    "ios": "pure-py"
   },
   {
-   "name": "grpcio-tools",
+   "name": "ruff",
    "android": "warning",
    "ios": "warning"
   },
@@ -171,7 +166,7 @@
    "ios": "warning"
   },
   {
-   "name": "ruff",
+   "name": "grpcio-tools",
    "android": "warning",
    "ios": "warning"
   },
@@ -181,52 +176,7 @@
    "ios": "warning"
   },
   {
-   "name": "fonttools",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "matplotlib",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "hf-xet",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pynacl",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "kiwisolver",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "scikit-learn",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "contourpy",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tiktoken",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tokenizers",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "httptools",
    "android": "warning",
    "ios": "warning"
   },
@@ -236,14 +186,44 @@
    "ios": "warning"
   },
   {
-   "name": "orjson",
+   "name": "httptools",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "chardet",
+   "name": "pynacl",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "fonttools",
    "android": "pure-py",
    "ios": "pure-py"
+  },
+  {
+   "name": "scikit-learn",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tiktoken",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "matplotlib",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tokenizers",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "orjson",
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "bcrypt",
@@ -251,7 +231,27 @@
    "ios": "warning"
   },
   {
+   "name": "kiwisolver",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "mypy",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "chardet",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
    "name": "google-crc32c",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "zstandard",
    "android": "warning",
    "ios": "warning"
   },
@@ -261,22 +261,7 @@
    "ios": "warning"
   },
   {
-   "name": "rapidfuzz",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "xxhash",
-   "android": "success",
-   "ios": "success"
-  },
-  {
-   "name": "mypy",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "zstandard",
+   "name": "contourpy",
    "android": "warning",
    "ios": "warning"
   },
@@ -286,9 +271,24 @@
    "ios": "warning"
   },
   {
+   "name": "rapidfuzz",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "black",
    "android": "pure-py",
    "ios": "pure-py"
+  },
+  {
+   "name": "xxhash",
+   "android": "success",
+   "ios": "success"
+  },
+  {
+   "name": "librt",
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "cython",
@@ -301,22 +301,7 @@
    "ios": "warning"
   },
   {
-   "name": "tree-sitter",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "librt",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pymongo",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "watchdog",
    "android": "warning",
    "ios": "warning"
   },
@@ -326,62 +311,12 @@
    "ios": "warning"
   },
   {
-   "name": "debugpy",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "dulwich",
-   "android": "success",
-   "ios": "pure-py"
-  },
-  {
-   "name": "pyzmq",
-   "android": "success",
-   "ios": "warning"
-  },
-  {
-   "name": "lz4",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "pymupdf",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pytokens",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "fastuuid",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pycryptodome",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "torch",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ruamel-yaml-clib",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "safetensors",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "brotli",
+   "name": "watchdog",
    "android": "warning",
    "ios": "warning"
   },
@@ -391,7 +326,62 @@
    "ios": "warning"
   },
   {
-   "name": "cbor2",
+   "name": "pyzmq",
+   "android": "success",
+   "ios": "warning"
+  },
+  {
+   "name": "pytokens",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "debugpy",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "safetensors",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lz4",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "torch",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "sglang",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pycryptodome",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "dulwich",
+   "android": "success",
+   "ios": "pure-py"
+  },
+  {
+   "name": "fastuuid",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "brotli",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "playwright",
    "android": "warning",
    "ios": "warning"
   },
@@ -401,47 +391,7 @@
    "ios": "warning"
   },
   {
-   "name": "backports-zstd",
-   "android": "success",
-   "ios": "success"
-  },
-  {
-   "name": "playwright",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pendulum",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "shapely",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "uuid-utils",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "argon2-cffi-bindings",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "libcst",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "triton",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "zope-interface",
+   "name": "ruamel-yaml-clib",
    "android": "warning",
    "ios": "warning"
   },
@@ -451,17 +401,7 @@
    "ios": "warning"
   },
   {
-   "name": "setproctitle",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "caio",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "llvmlite",
+   "name": "shapely",
    "android": "warning",
    "ios": "warning"
   },
@@ -471,24 +411,19 @@
    "ios": "warning"
   },
   {
-   "name": "mmh3",
+   "name": "uuid-utils",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "backports-zstd",
    "android": "success",
    "ios": "success"
-  },
-  {
-   "name": "simplejson",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "pycryptodomex",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ray",
-   "android": "warning",
-   "ios": "warning"
   },
   {
    "name": "pypdfium2",
@@ -496,17 +431,47 @@
    "ios": "warning"
   },
   {
-   "name": "confluent-kafka",
+   "name": "pycryptodomex",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "tree-sitter-languages",
+   "name": "pendulum",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "argon2-cffi-bindings",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "gevent",
+   "name": "mmh3",
+   "android": "success",
+   "ios": "success"
+  },
+  {
+   "name": "caio",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "triton",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cbor2",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "llvmlite",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "zope-interface",
    "android": "warning",
    "ios": "warning"
   },
@@ -516,12 +481,22 @@
    "ios": "warning"
   },
   {
-   "name": "pymssql",
+   "name": "confluent-kafka",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "ijson",
+   "name": "ray",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "simplejson",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "psycopg2",
    "android": "warning",
    "ios": "warning"
   },
@@ -531,7 +506,12 @@
    "ios": "warning"
   },
   {
-   "name": "psycopg2",
+   "name": "polars-runtime-32",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pymssql",
    "android": "warning",
    "ios": "warning"
   },
@@ -541,7 +521,12 @@
    "ios": "warning"
   },
   {
-   "name": "pyspark",
+   "name": "xgboost",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ijson",
    "android": "warning",
    "ios": "warning"
   },
@@ -551,12 +536,27 @@
    "ios": "warning"
   },
   {
-   "name": "xgboost",
+   "name": "gevent",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "polars-runtime-32",
+   "name": "libcst",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyspark",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "setproctitle",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "opencv-python-headless",
    "android": "warning",
    "ios": "warning"
   },
@@ -566,22 +566,12 @@
    "ios": "pure-py"
   },
   {
-   "name": "fastavro",
+   "name": "hypothesis",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "lazy-object-proxy",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "msgspec",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyodbc",
+   "name": "ddtrace",
    "android": "warning",
    "ios": "warning"
   },
@@ -591,17 +581,12 @@
    "ios": "warning"
   },
   {
-   "name": "hypothesis",
+   "name": "fastavro",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pyrsistent",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "opencv-python-headless",
+   "name": "statsmodels",
    "android": "warning",
    "ios": "warning"
   },
@@ -611,7 +596,37 @@
    "ios": "warning"
   },
   {
+   "name": "msgspec",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "torchvision",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lazy-object-proxy",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "pyodbc",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "nvidia-cublas",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "nvidia-cuda-nvrtc",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "nvidia-nvjitlink",
    "android": "warning",
    "ios": "warning"
   },
@@ -631,26 +646,6 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-cuda-nvrtc",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ddtrace",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "statsmodels",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "torchvision",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "nvidia-nvshmem-cu13",
    "android": "warning",
    "ios": "warning"
@@ -661,17 +656,17 @@
    "ios": "warning"
   },
   {
-   "name": "nvidia-cuda-runtime",
+   "name": "rignore",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "pyrsistent",
+   "android": "pure-py",
+   "ios": "pure-py"
   },
   {
    "name": "nvidia-cufft",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-nvjitlink",
    "android": "warning",
    "ios": "warning"
   },
@@ -681,22 +676,17 @@
    "ios": "warning"
   },
   {
-   "name": "semgrep",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyiceberg",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "nvidia-curand",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "ujson",
+   "name": "nvidia-cuda-runtime",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "fastar",
    "android": "warning",
    "ios": "warning"
   },
@@ -706,22 +696,12 @@
    "ios": "warning"
   },
   {
-   "name": "uv-build",
+   "name": "ty",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "tree-sitter-c-sharp",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "nvidia-nvtx",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ml-dtypes",
+   "name": "pyroaring",
    "android": "warning",
    "ios": "warning"
   },
@@ -731,8 +711,48 @@
    "ios": "warning"
   },
   {
+   "name": "pyiceberg",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "nvidia-nvtx",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "curl-cffi",
    "android": "success",
+   "ios": "warning"
+  },
+  {
+   "name": "zopfli",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ml-dtypes",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "scikit-image",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "sentencepiece",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "semgrep",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ujson",
+   "android": "warning",
    "ios": "warning"
   },
   {
@@ -746,72 +766,7 @@
    "ios": "warning"
   },
   {
-   "name": "tree-sitter-javascript",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyroaring",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "temporalio",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "sentencepiece",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ninja",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "zopfli",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "lupa",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "scikit-image",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ty",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "rignore",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "time-machine",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "fastar",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-java",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-c",
+   "name": "uv-build",
    "android": "warning",
    "ios": "warning"
   },
@@ -821,182 +776,27 @@
    "ios": "warning"
   },
   {
-   "name": "deltalake",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-rust",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-go",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "hiredis",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "clickhouse-connect",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "nvidia-nvjitlink-cu12",
+   "name": "lupa",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "jpype1",
+   "name": "tree-sitter-languages",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "prek",
+   "name": "ninja",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "oracledb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-php",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "dbt-extractor",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-ruby",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyproj",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "wandb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pybase64",
-   "android": "success",
-   "ios": "success"
-  },
-  {
-   "name": "pycares",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "thinc",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "sounddevice",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "spacy",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "bitarray",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pymupdf-layout",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "py-spy",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "mysqlclient",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "levenshtein",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "lightgbm",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tensorflow",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "preshed",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "maxminddb",
-   "android": "success",
-   "ios": "success"
-  },
-  {
-   "name": "frozendict",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "srsly",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-bash",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "murmurhash",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "soundfile",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "blis",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "onnx",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "cymem",
+   "name": "temporalio",
    "android": "warning",
    "ios": "warning"
   },
@@ -1006,27 +806,167 @@
    "ios": "warning"
   },
   {
+   "name": "soundfile",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "deltalake",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "hiredis",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lightgbm",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "dbt-extractor",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyproj",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "spacy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "oracledb",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "jpype1",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "nvidia-nvjitlink-cu12",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "wandb",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "prek",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-bash",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "py-spy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "sounddevice",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "thinc",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "bitarray",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "time-machine",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pymupdf-layout",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "murmurhash",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "levenshtein",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pybase64",
+   "android": "success",
+   "ios": "success"
+  },
+  {
+   "name": "blis",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "preshed",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "srsly",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "mysqlclient",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cymem",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pycares",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "tensorboard-data-server",
    "android": "pure-py",
    "ios": "pure-py"
   },
   {
-   "name": "cmake",
+   "name": "maxminddb",
+   "android": "success",
+   "ios": "success"
+  },
+  {
+   "name": "blake3",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pyyaml-ft",
+   "name": "tensorflow",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "docopt",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "awscrt",
+   "name": "onnx",
    "android": "warning",
    "ios": "warning"
   },
@@ -1036,7 +976,57 @@
    "ios": "warning"
   },
   {
+   "name": "awscrt",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "amazon-ion",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "maturin",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "jaxlib",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "docopt",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cmake",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "frozendict",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "xattr",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyogrio",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "clickhouse-driver",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "numexpr",
    "android": "warning",
    "ios": "warning"
   },
@@ -1046,12 +1036,17 @@
    "ios": "warning"
   },
   {
-   "name": "blake3",
+   "name": "memray",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "memray",
+   "name": "google-re2",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "textual-speedups",
    "android": "warning",
    "ios": "warning"
   },
@@ -1066,77 +1061,12 @@
    "ios": "warning"
   },
   {
-   "name": "pyogrio",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "numexpr",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "jaxlib",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "biopython",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "amazon-ion",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "burner-redis",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "patchelf",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "textual-speedups",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "libclang",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "chromadb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-yaml",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "magika",
    "android": "pure-py",
    "ios": "pure-py"
   },
   {
-   "name": "clickhouse-driver",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ratelimit",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "jellyfish",
+   "name": "tree-sitter-javascript",
    "android": "warning",
    "ios": "warning"
   },
@@ -1146,12 +1076,7 @@
    "ios": "warning"
   },
   {
-   "name": "imageio-ffmpeg",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "google-re2",
+   "name": "oss2",
    "android": "warning",
    "ios": "warning"
   },
@@ -1161,112 +1086,12 @@
    "ios": "warning"
   },
   {
-   "name": "xmlsec",
+   "name": "biopython",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "geventhttpclient",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ciso8601",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-language-pack",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "torchaudio",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "arro3-core",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "optree",
-   "android": "success",
-   "ios": "success"
-  },
-  {
-   "name": "primp",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "h3",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pysftp",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "aiokafka",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyinstrument",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "lmnr-claude-code-proxy",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ctranslate2",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pillow-heif",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "soxr",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "python-bidi",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyinstaller",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "avro-python3",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-embedded-template",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "bottleneck",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "oss2",
+   "name": "imageio-ffmpeg",
    "android": "warning",
    "ios": "warning"
   },
@@ -1276,72 +1101,107 @@
    "ios": "warning"
   },
   {
+   "name": "libclang",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "patchelf",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "chromadb",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pillow-heif",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ratelimit",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "arro3-core",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "torchaudio",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lmnr-claude-code-proxy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "burner-redis",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "geventhttpclient",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyinstaller",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "h3",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "jellyfish",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "xmlsec",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "avro-python3",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "pyclipper",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "stringcase",
+   "name": "ciso8601",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "audioop-lts",
+   "name": "habluetooth",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "cassandra-driver",
+   "name": "pyroscope-io",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pipdeptree",
+   "name": "primp",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "openlineage-sql",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pikepdf",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-python",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "backports-zoneinfo",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "sgmllib3k",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "func-timeout",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pi-heif",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "rtree",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "prophet",
+   "name": "pysftp",
    "android": "warning",
    "ios": "warning"
   },
@@ -1351,92 +1211,92 @@
    "ios": "warning"
   },
   {
+   "name": "python-bidi",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "soxr",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "granian",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-c",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyinstrument",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "bottleneck",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-java",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-c-sharp",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ctranslate2",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "aiokafka",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "obstore",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-rust",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pikepdf",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "swifter",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pinecone",
+   "name": "pyyaml-ft",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pyppmd",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "cytoolz",
-   "android": "warning",
+   "name": "optree",
+   "android": "success",
    "ios": "success"
   },
   {
-   "name": "protobuf3-to-dict",
+   "name": "sgmllib3k",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "opencv-contrib-python",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "aliyun-python-sdk-core",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "zstd",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "python-box",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "toons",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pybcj",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "lancedb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "inflate64",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyhive",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "deptry",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "rustworkx",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "dependency-injector",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "biotite",
+   "name": "tree-sitter-go",
    "android": "warning",
    "ios": "warning"
   },
@@ -1446,27 +1306,17 @@
    "ios": "warning"
   },
   {
-   "name": "brotlicffi",
+   "name": "rtree",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pythonnet",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "unicodecsv",
+   "name": "rasterio",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pgpy",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "crcmod",
+   "name": "tree-sitter-python",
    "android": "warning",
    "ios": "warning"
   },
@@ -1476,22 +1326,262 @@
    "ios": "warning"
   },
   {
-   "name": "autobahn",
+   "name": "pi-heif",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "bitsandbytes",
+   "name": "pyppmd",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "selectolax",
+   "name": "zstd",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "audioop-lts",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "opencv-contrib-python",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pybcj",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cytoolz",
+   "android": "warning",
+   "ios": "success"
+  },
+  {
+   "name": "inflate64",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "openlineage-sql",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pytest-dependency",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "gensim",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pipdeptree",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "deptry",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cassandra-driver",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cchardet",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "dependency-injector",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "crcmod",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lancedb",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pinecone",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "protobuf3-to-dict",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "rustworkx",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "toons",
    "android": "warning",
    "ios": "warning"
   },
   {
    "name": "apache-tvm-ffi",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pgpy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-typescript",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "func-timeout",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "xgrammar",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "stringcase",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-php",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "python-box",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "openai-harmony",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "aliyun-python-sdk-core",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "autobahn",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-ruby",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "prophet",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "jq",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyhive",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "whenever",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
+   "name": "pyiceberg-core",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "backports-zoneinfo",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ortools",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyrefly",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tensorflow-io-gcs-filesystem",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tables",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "timezonefinder",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "ckzg",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "python-crfsuite",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "apache-beam",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "unicodecsv",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "python-calamine",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "nvidia-cutlass-dsl-libs-base",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "jsonschema-rs",
    "android": "warning",
    "ios": "warning"
   },
@@ -1506,47 +1596,7 @@
    "ios": "warning"
   },
   {
-   "name": "python-crfsuite",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-typescript",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "xgrammar",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "jq",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "tensorflow-io-gcs-filesystem",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyahocorasick",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "cchardet",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "rasterio",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyiceberg-core",
+   "name": "tree-sitter-yaml",
    "android": "warning",
    "ios": "warning"
   },
@@ -1556,102 +1606,17 @@
    "ios": "warning"
   },
   {
-   "name": "pyodps",
+   "name": "selectolax",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "apache-beam",
+   "name": "pyahocorasick",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "whenever",
-   "android": "pure-py",
-   "ios": "pure-py"
-  },
-  {
-   "name": "vllm",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ortools",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyroscope-io",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "gensim",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "openai-harmony",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "hf-transfer",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pygit2",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "timezonefinder",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "logbook",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pyrefly",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "llguidance",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "ckzg",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "polyleven",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pypandoc-binary",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "python-rapidjson",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "py-rust-stemmers",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "uamqp",
+   "name": "bitsandbytes",
    "android": "warning",
    "ios": "warning"
   },
@@ -1661,87 +1626,27 @@
    "ios": "success"
   },
   {
+   "name": "wordcloud",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "vllm",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cuda-core",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "pycurl",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pyhocon",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "jsonschema-rs",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "gssapi",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "habluetooth",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "granian",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "obstore",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "python-calamine",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "pymupdfb",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "freetype-py",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "coolprop",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "outlines-core",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "dm-tree",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "bitstruct",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "krb5",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "osqp",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "atomicwrites",
+   "name": "pyodps",
    "android": "warning",
    "ios": "warning"
   },
@@ -1751,27 +1656,52 @@
    "ios": "warning"
   },
   {
-   "name": "pyqt6",
+   "name": "dm-tree",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "multi-key-dict",
+   "name": "pycocotools",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "astropy",
+   "name": "logbook",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "python-ldap",
+   "name": "pygit2",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "timeout-decorator",
+   "name": "uamqp",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "llguidance",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "osqp",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "coolprop",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "gssapi",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "outlines-core",
    "android": "warning",
    "ios": "warning"
   },
@@ -1781,25 +1711,95 @@
    "ios": "warning"
   },
   {
-   "name": "pyerfa",
+   "name": "cartopy",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "tibs",
+   "name": "py-rust-stemmers",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "nvidia-cutlass-dsl-libs-base",
+   "name": "blosc2",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "pylance",
+   "name": "cvxpy",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "bitstruct",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "zizmor",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "hf-transfer",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tach",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "python-rapidjson",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "multi-key-dict",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-language-pack",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pyhocon",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "shellcheck-py",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "cftime",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "lmdb",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "newrelic",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "pglast",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "krb5",
    "android": "warning",
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 31 July 2026, 12:06:00 UTC"
+ "last_update": "Saturday, 01 August 2026, 11:22:27 UTC"
 }
