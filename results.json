@@ -1511,6 +1511,16 @@
    "ios": "warning"
   },
   {
+   "name": "azure-cli-core",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
+   "name": "azure-cli",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "whenever",
    "android": "pure-py",
    "ios": "pure-py"
@@ -1789,17 +1799,7 @@
    "name": "newrelic",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "pglast",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
-   "name": "krb5",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Monday, 03 August 2026, 12:57:13 UTC"
+ "last_update": "Tuesday, 04 August 2026, 12:05:12 UTC"
 }
