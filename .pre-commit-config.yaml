@@ -30,5 +30,10 @@ repos:
     hooks:
       - id: python-check-blanket-noqa
 
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.29.0
+    hooks:
+      - id: zizmor
+
 ci:
   autoupdate_schedule: quarterly
