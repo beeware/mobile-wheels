@@ -2,8 +2,8 @@
  "data": [
   {
    "name": "charset-normalizer",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "cryptography",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 12 August 2026, 11:03:43 UTC"
+ "last_update": "Thursday, 13 August 2026, 11:04:11 UTC"
 }
