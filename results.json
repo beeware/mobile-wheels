@@ -1481,11 +1481,6 @@
    "ios": "warning"
   },
   {
-   "name": "aliyun-python-sdk-core",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "autobahn",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "krb5",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "tree-sitter-cpp",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Monday, 17 August 2026, 10:37:18 UTC"
+ "last_update": "Tuesday, 18 August 2026, 10:37:10 UTC"
 }
