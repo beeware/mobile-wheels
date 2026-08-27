@@ -296,6 +296,11 @@
    "ios": "pure-py"
   },
   {
+   "name": "isort",
+   "android": "pure-py",
+   "ios": "pure-py"
+  },
+  {
    "name": "tornado",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "krb5",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "tree-sitter-cpp",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Wednesday, 26 August 2026, 10:40:39 UTC"
+ "last_update": "Thursday, 27 August 2026, 20:15:51 UTC"
 }
