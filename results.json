@@ -233,7 +233,7 @@
   {
    "name": "kiwisolver",
    "android": "warning",
-   "ios": "warning"
+   "ios": "success"
   },
   {
    "name": "mypy",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 27 August 2026, 20:15:51 UTC"
+ "last_update": "Friday, 28 August 2026, 21:12:37 UTC"
 }
