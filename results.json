@@ -1651,6 +1651,11 @@
    "ios": "warning"
   },
   {
+   "name": "pywebpush",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "tensorflow-text",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "pglast",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "krb5",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Saturday, 29 August 2026, 15:00:34 UTC"
+ "last_update": "Sunday, 30 August 2026, 14:45:59 UTC"
 }
