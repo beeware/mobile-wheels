@@ -67,8 +67,8 @@
   },
   {
    "name": "multidict",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "propcache",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Tuesday, 08 September 2026, 14:18:34 UTC"
+ "last_update": "Wednesday, 09 September 2026, 14:19:40 UTC"
 }
