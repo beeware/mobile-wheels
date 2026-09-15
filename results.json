@@ -1676,6 +1676,11 @@
    "ios": "warning"
   },
   {
+   "name": "numpy-financial",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "selectolax",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "statsig-python-core",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "cftime",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Monday, 14 September 2026, 16:16:26 UTC"
+ "last_update": "Tuesday, 15 September 2026, 14:49:21 UTC"
 }
