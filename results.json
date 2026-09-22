@@ -1246,6 +1246,11 @@
    "ios": "warning"
   },
   {
+   "name": "mistral-vibe",
+   "android": "warning",
+   "ios": "warning"
+  },
+  {
    "name": "pyclipper",
    "android": "warning",
    "ios": "warning"
@@ -1794,12 +1799,7 @@
    "name": "zizmor",
    "android": "warning",
    "ios": "warning"
-  },
-  {
-   "name": "statsig-python-core",
-   "android": "warning",
-   "ios": "warning"
   }
  ],
- "last_update": "Monday, 21 September 2026, 16:21:40 UTC"
+ "last_update": "Tuesday, 22 September 2026, 14:35:32 UTC"
 }
