@@ -122,8 +122,8 @@
   },
   {
    "name": "sqlalchemy",
-   "android": "warning",
-   "ios": "warning"
+   "android": "pure-py",
+   "ios": "pure-py"
   },
   {
    "name": "scipy",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 25 September 2026, 15:06:23 UTC"
+ "last_update": "Saturday, 26 September 2026, 14:19:27 UTC"
 }
