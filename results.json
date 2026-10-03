@@ -37,8 +37,8 @@
   },
   {
    "name": "markupsafe",
-   "android": "warning",
-   "ios": "warning"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "pandas",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 02 October 2026, 16:11:07 UTC"
+ "last_update": "Saturday, 03 October 2026, 14:38:16 UTC"
 }
