@@ -47,8 +47,8 @@
   },
   {
    "name": "multidict",
-   "android": "success",
-   "ios": "success"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "rpds-py",
@@ -1347,7 +1347,7 @@
   },
   {
    "name": "cytoolz",
-   "android": "warning",
+   "android": "success",
    "ios": "success"
   },
   {
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 08 October 2026, 17:19:11 UTC"
+ "last_update": "Friday, 09 October 2026, 16:55:02 UTC"
 }
