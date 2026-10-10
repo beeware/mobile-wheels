@@ -47,8 +47,8 @@
   },
   {
    "name": "multidict",
-   "android": "warning",
-   "ios": "warning"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "rpds-py",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Friday, 09 October 2026, 16:55:02 UTC"
+ "last_update": "Saturday, 10 October 2026, 15:49:04 UTC"
 }
