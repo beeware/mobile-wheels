@@ -637,8 +637,8 @@
   },
   {
    "name": "lazy-object-proxy",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "warning",
+   "ios": "warning"
   },
   {
    "name": "ujson",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Saturday, 17 October 2026, 13:35:46 UTC"
+ "last_update": "Sunday, 18 October 2026, 13:52:54 UTC"
 }
