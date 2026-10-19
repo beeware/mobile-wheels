@@ -1466,11 +1466,6 @@
    "ios": "warning"
   },
   {
-   "name": "pymupdf-layout",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "whenever",
    "android": "pure-py",
    "ios": "pure-py"
@@ -1799,7 +1794,12 @@
    "name": "multi-key-dict",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "timeout-decorator",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Sunday, 18 October 2026, 13:52:54 UTC"
+ "last_update": "Monday, 19 October 2026, 16:54:23 UTC"
 }
