@@ -147,8 +147,8 @@
   },
   {
    "name": "coverage",
-   "android": "pure-py",
-   "ios": "pure-py"
+   "android": "success",
+   "ios": "success"
   },
   {
    "name": "tomli",
@@ -1801,5 +1801,5 @@
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 22 October 2026, 15:00:01 UTC"
+ "last_update": "Friday, 23 October 2026, 14:50:53 UTC"
 }
