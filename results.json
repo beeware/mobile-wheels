@@ -1791,15 +1791,15 @@
    "ios": "warning"
   },
   {
-   "name": "multi-key-dict",
+   "name": "timeout-decorator",
    "android": "warning",
    "ios": "warning"
   },
   {
-   "name": "timeout-decorator",
+   "name": "ua-parser-rs",
    "android": "warning",
    "ios": "warning"
   }
  ],
- "last_update": "Thursday, 29 October 2026, 16:49:14 UTC"
+ "last_update": "Friday, 30 October 2026, 16:37:29 UTC"
 }
