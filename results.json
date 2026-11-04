@@ -846,11 +846,6 @@
    "ios": "warning"
   },
   {
-   "name": "srsly",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "imageio-ffmpeg",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "tensorflow-text",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "pylance",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Tuesday, 03 November 2026, 17:40:01 UTC"
+ "last_update": "Wednesday, 04 November 2026, 17:54:28 UTC"
 }
