@@ -1656,11 +1656,6 @@
    "ios": "warning"
   },
   {
-   "name": "mujoco",
-   "android": "warning",
-   "ios": "warning"
-  },
-  {
    "name": "vtk",
    "android": "warning",
    "ios": "warning"
@@ -1799,7 +1794,12 @@
    "name": "pylance",
    "android": "warning",
    "ios": "warning"
+  },
+  {
+   "name": "lingua-language-detector",
+   "android": "warning",
+   "ios": "warning"
   }
  ],
- "last_update": "Thursday, 05 November 2026, 17:56:50 UTC"
+ "last_update": "Friday, 06 November 2026, 17:18:08 UTC"
 }
